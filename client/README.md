@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# Agri-AI
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Projet : Système d'aide à la décision pour l'agriculture intelligente
 
-## Available Scripts
+## Objectif du projet
 
-In the project directory, you can run:
+Développer un système d'intelligence artificielle qui utilise des données sur le sol, les prévisions météorologiques et les données historiques pour fournir des recommandations aux agriculteurs concernant les cultures à semer et pour les informer sur les maladies potentielles et les conditions météorologiques à venir.
 
-### `npm start`
+## Fonctionnalités principales
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 1. Collecte et intégration de données
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Caractéristiques du sol** : Collecter des données sur les caractéristiques du sol à partir de sources variées telles que des kits de test et des sondes de sol.
+- **Prévisions météorologiques** : Intégrer des données sur les prévisions météorologiques à partir de sources fiables pour fournir des informations sur les précipitations, la température, l'humidité, etc.
+- **Données historiques** : Utiliser des données historiques sur les cultures et les conditions météorologiques pour améliorer les prédictions et les recommandations.
 
-### `npm test`
+### 2. Analyse des données
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Modèles d'apprentissage automatique** : Développer des modèles pour classifier les types de sols, détecter les signes de maladies des plantes et prédire les conditions de croissance des cultures.
+- **Algorithmes d'analyse** : Utiliser des algorithmes pour identifier les tendances et les modèles dans les données collectées.
 
-### `npm run build`
+### 3. Interface utilisateur conviviale
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Interface intuitive** : Concevoir une interface utilisateur intuitive et conviviale accessible aux agriculteurs de différents niveaux de compétence en technologie.
+- **Affichage des recommandations** : Afficher les recommandations de manière claire et concise, avec des explications détaillées si nécessaire.
+- **Feedback des utilisateurs** : Intégrer des fonctionnalités pour permettre aux agriculteurs de fournir des commentaires et des informations supplémentaires.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 4. Déploiement et maintenance
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Déploiement** : Déployer le système sur une plateforme accessible en ligne ou via une application web.
+- **Sécurité et confidentialité** : Assurer la sécurité et la confidentialité des données des utilisateurs.
+- **Support technique** : Fournir un support technique et des mises à jour régulières pour garantir le bon fonctionnement du système.
 
-### `npm run eject`
+## Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Clonez ce dépôt et installez les dépendances nécessaires :
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```sh
+git clone https://github.com/dinegamer/agri-ai.git
+cd agri-ai
+npm install
