@@ -1,0 +1,81 @@
+.background-balloons {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+#waveCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Pour placer le canvas en arrière-plan */
+}
+
+.ball {
+  position: absolute;
+  width: 100px; /* Taille plus grande */
+  height: 100px; /* Taille plus grande */
+  border-radius: 50%;
+  background-color: #8dc429; /* Couleur verte */
+  animation: move-left-bottom 8s infinite alternate;
+}
+
+.ball:nth-child(2) {
+  left: 35%; /* Ajustez la position horizontale */
+  top: 20%; /* Ajustez la position verticale */
+  animation-delay: 2s; /* Délai d'animation */
+  background-color: #ff6347; /* Couleur orange */
+}
+
+.ball:nth-child(3) {
+  left: 50%; /* Ajustez la position horizontale */
+  top: 40%; /* Ajustez la position verticale */
+  animation-delay: 4s; /* Délai d'animation */
+  border: 10px solid #4682b4; /* Couleur Steel Blue */
+}
+
+.ball:nth-child(4) {
+  left: 65%; /* Ajustez la position horizontale */
+  top: 60%; /* Ajustez la position verticale */
+  animation-delay: 6s; /* Délai d'animation */
+  background-color: #32cd32; /* Couleur Lime Green */
+}
+
+.ball:nth-child(5) {
+  left: 80%; /* Ajustez la position horizontale */
+  top: 80%; /* Ajustez la position verticale */
+  animation-delay: 8s; /* Délai d'animation */
+  background-color: #9370db; /* Couleur Medium Purple */
+}
+
+@keyframes move-left-bottom {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 100%);
+  }
+}
+.wave {
+  position: absolute;
+  bottom: 30%;
+  left: 30%;
+  width: 300%;
+  height: 120%;
+  background-image: url('wave-loop.jpg'); /* Chemin de votre image */
+  animation: waveAnimation 10s infinite linear;
+  z-index: -1;
+}
+
+@keyframes waveAnimation {
+  0% {
+    transform: translateX(0); /* Déplacement initial à gauche */
+  }
+  100% {
+    transform: translateX(-50%); /* Déplacement à gauche */
+  }
+}
+
+

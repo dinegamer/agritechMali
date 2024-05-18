@@ -1,0 +1,152 @@
+
+* {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.homeWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  background-image: url('https://images.pexels.com/photos/1227513/pexels-photo-1227513.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  
+}
+/* .video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Assurez-vous que la vidéo est positionnée derrière le contenu */
+/* } */ */
+
+
+.new {
+  width: 100%;
+  display: flex;
+}
+
+.newContainer {
+  flex: 6;
+}
+
+.weatherSection {
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 20px;
+}
+
+.leftWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stateMenu {
+  width: 100%;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  color: #000000;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+}
+
+/* .humidityWrap {
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+} */
+
+.humidityWrap {
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  margin-bottom: 20px;
+  /* border: 10px solid green; */
+  
+}
+
+.humidityWrap > * {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.humidityData + .humidityData {
+  margin-top: 10px;
+}
+
+.value {
+  font-weight: bold;
+}
+
+.cardWrap {
+  margin-bottom: 20px;
+}
+
+.cardList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.cardList > li {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer;
+}
+
+.cardList > li.active {
+  background-color: #00ff88;
+  color: #ffffff;
+}
+
+.cardList > li:hover {
+  background-color: #00ff88;
+  color: #ffffff;
+}
+
+.dateDay,
+.locationName {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.weatherTemp {
+  text-align: center;
+  font-weight: bold;
+  font-size: 3em;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+  .weatherSection {
+    margin: 0;
+  }
+}
+
+

@@ -1,0 +1,41 @@
+@keyframes bounce {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.ball {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #8dc429;
+  animation: bounce 3s infinite alternate;
+}
+
+.ball:nth-child(2) {
+  left: 25%;
+  animation-delay: 1s;
+  background-color: #ff6347; /* Orange */
+}
+
+.ball:nth-child(3) {
+  left: 50%;
+  animation-delay: 2s;
+  border: 10px solid #4682b4; /* Steel Blue */
+}
+
+.ball:nth-child(4) {
+  left: 75%;
+  animation-delay: 1.5s;
+  background-color: #32cd32; /* Lime Green */
+}
+
+.ball:nth-child(5) {
+  left: 100%;
+  animation-delay: 1.5s;
+  background-color: #9370db; /* Medium Purple */
+}

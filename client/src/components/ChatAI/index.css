@@ -1,0 +1,52 @@
+/* index.css */
+/* Supprimez tous les styles qui entrent en conflit avec Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.custom-gradient-01 {
+  position: absolute;
+  width: 200px;
+  height: 238px;
+  top: 0;
+  background: #ca00ff; /* Remplacez par la couleur MUI correspondante */
+  filter: blur(175px);
+}
+
+.custom-gradient-02 {
+  position: absolute;
+  width: 200px;
+  height: 238px;
+  top: -6rem;
+  right: 0px;
+  background: #7aebfb; /* Remplacez par la couleur MUI correspondante */
+  filter: blur(190px)
+}
+/* CSS */
+
+/* Container général */
+.message-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 80%; /* pour limiter la largeur des messages */
+  margin: 0 auto; /* centrage horizontal */
+}
+
+/* Style du message */
+.message {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  max-width: 70%;
+}
+
+/* Style du message envoyé par le sender */
+.sender {
+  align-self: flex-start; /* alignement à gauche */
+  background-color: #DCF8C6; /* couleur de fond */
+}
+
+/* Style du message reçu par le récepteur */
+.receiver {
+  align-self: flex-end; /* alignement à droite */
+  background-color: #E5E5EA; /* couleur de fond */
+}
