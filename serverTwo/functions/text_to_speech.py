@@ -27,7 +27,7 @@ def convert_text_to_speech(message):
   "Content-Type": "application/json",
   "xi-api-key": ELEVEN_LABS_API_KEY
 }
-  endpoint = f"https://api.elevenlabs.io/v1/text-to-speech/{voice_rachel}"
+  endpoint = f"https://api.io/v1/text-to-speech/"
 
   try:
     response = requests.post(endpoint, json=body, headers=headers)

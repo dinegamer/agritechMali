@@ -7,7 +7,7 @@ from openai import OpenAI
 from functions.database import get_recent_messages
 from dotenv import load_dotenv
 load_dotenv()
-api_key = "sk-proj-zmRpx88D4ck88D2o3fiTT3BlbkFJzBLFE1BdWS20q9D6VG3L"
+api_key = "sk-proj-zmRpx88D4ck88D2o3fiTT3BlbkFJzBLFE1BdWS20q9D6V3L"
 
 # Créer une instance du client OpenAI en passant la clé API
 client = OpenAI(api_key=api_key)

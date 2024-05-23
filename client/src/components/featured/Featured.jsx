@@ -15,7 +15,7 @@ const Featured = () => {
 
   useEffect(() => {
     fetch(
-      `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=12896f61d643895827de35262e8abac7&units=metric`
+      `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=12896f61d64389582735262e8abac7&units=metric`
     )
       .then((res) => {
         if (res.status === 200) {

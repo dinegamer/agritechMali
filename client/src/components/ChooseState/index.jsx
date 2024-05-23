@@ -23,7 +23,7 @@ const ChooseStateComponents = ()=>{
     }
 
     // API VAR
-    const APIKEY = '34480b98aa332da53123a0ac63a4ea9d';
+    const APIKEY = '34480b98aa332da53123a0ac64ea9d';
     
     let lat = city && city.lat ? city.lat : '';
     let long = city && city.lng ? city.lng : '';
